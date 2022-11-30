@@ -33,38 +33,52 @@ img {
 .card {
   display: flex;
   border-radius: 10px;
+  width: 1080px;
+  height: 600px;
+  padding: 0 10px;
+}
+
+.card-content {
+  flex: 1;
 }
 
 .sedans {
-  flex: 1;
-  width: 400px;
-  height: 600px;
   background-color: hsl(31, 77%, 52%);
   border-radius: 10px 0 0 10px;
 }
 
 .suvs {
-  flex: 1;
-  width: 400px;
-  height: 600px;
   background-color: hsl(184, 100%, 22%);
 }
 
 .luxury {
-  flex: 1;
-  width: 400px;
-  height: 600px;
   background-color: hsl(179, 100%, 13%);
   border-radius: 0 10px 10px 0;
 }
 
-@media (max-width: 1210px) {
+@media (max-width: 1000px) {
   .container {
     height: 100%;
+    width: 100%;
   }
   .card {
     display: grid;
     grid-column: 1fr;
     margin: 20px 0;
+    max-width: 350px;
+    height: 100%;
+  }
+
+  .card-content {
+    max-width: 360px;
+    height: 550px;
+  }
+
+  .sedans {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .luxury {
+    border-radius: 0 0 10px 10px;
   }
 }
