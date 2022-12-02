@@ -1,3 +1,8 @@
+/*
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+*/
+
 /* general styles */
 
 body {
@@ -25,7 +30,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: tomato;
   max-width: 1440px;
   height: 100vh;
 }
@@ -36,19 +40,69 @@ img {
   width: 1080px;
   height: 600px;
   padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.card h1 {
+  color: #ffffff;
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+.card p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 0.94rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.1rem;
+}
+
+.card-img {
+  padding-bottom: 30px;
 }
 
 .card-content {
-  flex: 1;
+  padding: 50px;
+}
+
+.card a {
+  background-color: white;
+  text-decoration: none;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.94rem;
+  padding: 15px 35px;
+  border-radius: 30px;
+}
+
+.card a:hover {
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.card-button {
+  margin-top: 190px;
 }
 
 .sedans {
   background-color: hsl(31, 77%, 52%);
   border-radius: 10px 0 0 10px;
 }
+.sedans a {
+  color: hsl(31, 77%, 52%);
+  border: 1px solid hsl(31, 77%, 52%);
+}
 
 .suvs {
   background-color: hsl(184, 100%, 22%);
+}
+
+.suvs a {
+  color: hsl(184, 100%, 22%);
+  border: 1px solid (184, 100%, 22%);
 }
 
 .luxury {
@@ -56,7 +110,12 @@ img {
   border-radius: 0 10px 10px 0;
 }
 
-@media (max-width: 1000px) {
+.luxury a {
+  color: hsl(179, 100%, 13%);
+  border: 1px solid hsl(179, 100%, 13%);
+}
+
+@media (max-width: 1050px) {
   .container {
     height: 100%;
     width: 100%;
